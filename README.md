@@ -6,3 +6,13 @@ However, the computational cost of analyzing single cell RNA sequencing data is 
 
 The main bottleneck in the single cell RNA sequencing pipeline is the clustering step, which groups cells with similar gene expression profiles together to identify cell types.
 Typically, this step is performed using a method called k-nn clustering, with PCA used to reduce the dimensionality of the data before clustering.
+
+# Getting Started
+
+1. Create a virtual environment & install dependencies:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+
+2. Run knn_mnist.ipynb to see knn on MNIST dataset

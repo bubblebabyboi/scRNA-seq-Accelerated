@@ -24,9 +24,9 @@ module regmap #(
             if (wr_en) begin 
                 case (wr_addr)
                     8'h00: regmap[wr_addr] <= wr_data;          // vector dimensions (10,000-50,000)
-                    8'h01: regmap[wr_addr] <= wr_data;
-                    8'h02: regmap[wr_addr] <= wr_data;
-                    8'h03: regmap[wr_addr] <= wr_data;
+                    8'h01: regmap[wr_addr] <= wr_data;          // k-value (1-10)
+                    8'h02: regmap[wr_addr] <= wr_data;          // distance metric (euclidean, manhattan, etc.) 
+                    8'h03: regmap[wr_addr] <= wr_data;          
                     8'h04: regmap[wr_addr] <= wr_data;
                     8'h05: regmap[wr_addr] <= wr_data;
                     8'h06: regmap[wr_addr] <= wr_data;
